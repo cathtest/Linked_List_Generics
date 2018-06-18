@@ -1,16 +1,13 @@
-public class FlowerType {
+public class FlowerType <F> {
+
+    F ob;
 
 
-    String s;
-    public FlowerType(String s) {
-        this.s= this.s;
+    FlowerType(F o) {
+        ob = o;
     }
 
-
-
-
-    public String getS() {
-        return s;
+    F getob() {
+        return ob;
     }
-
 }

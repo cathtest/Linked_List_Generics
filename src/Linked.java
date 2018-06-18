@@ -55,11 +55,19 @@ public class Linked {
         Linked theLinkedList = new Linked();
 
 
-        theLinkedList.first(new FlowerType("Roses are red"));
-        theLinkedList.first(new FlowerType("Violets are blue"));
-        theLinkedList.first(new FlowerType("Daffodils are unknown"));
-        theLinkedList.last(new FlowerType("Daisies are rosy"));
-        theLinkedList.last(new FlowerType("Daisies are rosy"));
+        theLinkedList.first(new FlowerType <String> ("Roses are red"));
+        theLinkedList.first(new FlowerType <String>("Violets are blue"));
+        theLinkedList.first(new FlowerType<String> ("Daffodils are unknown"));
+        theLinkedList.last(new FlowerType<String> ("Daisies are rosy"));
+        theLinkedList.last(new FlowerType<String> ("Daisies are rosy"));
+
+        FlowerType<String> fl = new FlowerType<String>("Test");
+
+        String s = fl.getob();
+
+
+
+        theLinkedList.first(new FlowerType<String> (s));
 
         theLinkedList.display();
 
